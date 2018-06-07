@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kunal.braintrainer.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="109dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/timer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_red_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="30"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="60sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/score"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/timer"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/holo_blue_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=" 0/0"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/finalt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="invisible"
+            android:layout_below="@+id/gridView"
+            android:layout_toRightOf="@+id/timer"
+            android:layout_toEndOf="@+id/timer" />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/finalt"
+            android:layout_alignStart="@+id/finalt"
+            android:layout_below="@+id/finalt"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/playagain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/result"
+            android:layout_centerHorizontal="true"
+            android:onClick="go"
+            android:text="try again"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:layout_alignLeft="@+id/gridView"
+            android:layout_alignStart="@+id/gridView"
+            android:layout_alignTop="@+id/gridView"
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="go"
+            android:text="go!"
+            android:textSize="120sp" />
+
+        <TextView
+            android:id="@+id/equation"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/timer"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/timer"
+            android:layout_toRightOf="@+id/timer"
+            android:text="50+50"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
